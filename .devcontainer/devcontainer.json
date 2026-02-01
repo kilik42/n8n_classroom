@@ -1,6 +1,6 @@
 {
   "name": "n8n Codespace",
-  "dockerComposeFile": "docker-compose.yml",
+  "dockerComposeFile": ".devcontainer/docker-compose.yml",
   "service": "n8n",
   "workspaceFolder": "/workspace",
   "features": {
