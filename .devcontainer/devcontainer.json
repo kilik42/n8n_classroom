@@ -1,0 +1,17 @@
+{
+  "name": "n8n Codespace",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "n8n",
+  "workspaceFolder": "/workspace",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [5678],
+  "portsAttributes": {
+    "5678": {
+      "label": "n8n",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "echo 'Codespace ready — starting n8n...'"
+}
