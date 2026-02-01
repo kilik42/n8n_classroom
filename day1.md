@@ -1,0 +1,1 @@
+Day 1 Student Guide: How to Launch n8n in GitHub Codespaces
