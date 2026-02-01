@@ -25,3 +25,9 @@ Your work is saved automatically inside the Codespace.
 
 Just close the Codespace.  
 You can reopen it anytime and your n8n instance will still be there.
+
+If it doesn’t start automatically, run the following on separate lines, meaning run one command after the other..
+
+docker-compose up -d
+docker ps
+n8n   Up   0.0.0.0:5678->5678/tcp
