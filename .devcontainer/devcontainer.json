@@ -13,9 +13,8 @@
       "onAutoForward": "openBrowser"
     }
   },
-  "postCreateCommand": "echo 'Codespace ready — starting n8n...'",
-  "postStartCommand": "bash .devcontainer/startup-banner.sh && bash .devcontainer/preflight.sh",
-  "postStartCommand": "bash .devcontainer/status-panel.sh"
+  "postCreateCommand": "echo 'Codespace ready — starting n8n...'", 
+  "postStartCommand": "bash .devcontainer/startup-banner.sh && bash .devcontainer/preflight.sh && bash .devcontainer/status-panel.sh"
 
   
 
