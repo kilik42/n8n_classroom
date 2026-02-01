@@ -1,4 +1,19 @@
 #!/usr/bin/env bash
+# --- Self-healing permissions block ---
+echo -n "🛠  Ensuring devcontainer scripts are executable... "
+
+chmod +x .devcontainer/*.sh 2>/dev/null
+
+# Verify at least one script is executable
+if [ ! -x .devcontainer/preflight.sh ]; then
+    echo "❌ FAILED"
+    echo "Scripts are still not executable. Something is wrong with file permissions."
+    exit 1
+fi
+
+echo "✅ OK"
+# --- End self-healing block ---
+
 
 echo ""
 echo "=============================================================="
